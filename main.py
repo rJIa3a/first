@@ -26,7 +26,7 @@ if __name__ == "__main__":
         "api_field_list": visit_field_list,
         "google_sheet_url": os.getenv("VISIT_SHEET_URL")
     }]
-    gc = service_account()
+    gc = service_account('~/.config/gspread/service_account.json')
 
     for data_elem in data_list:
         data = get_log_data(api_host_url,
