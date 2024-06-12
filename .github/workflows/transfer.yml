@@ -2,7 +2,7 @@ name: Transfer Cron Job
 
 on:
   schedule:
-    - cron: "01 22 * * *"
+    - cron: "22 22 * * *"
 
 env:
   COUNTER_ID: ${{secrets.COUNTER_ID}}
