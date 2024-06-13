@@ -9,7 +9,7 @@ from io import StringIO
 
 def create_query(host, counter_id, token, source, start_date, end_date, api_field_list):
     header_dict = {
-        "Authorization": "OAuth {token}",
+        "Authorization": f"OAuth "{token}",
         "Content-Type": "application/x-yametrika+json"
     }
     url_params = urlencode([
